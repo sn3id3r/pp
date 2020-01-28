@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "384589523329",
+    "firebase_url": "https://personalidad-y-prestigio.firebaseio.com",
+    "project_id": "personalidad-y-prestigio",
+    "storage_bucket": "personalidad-y-prestigio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384589523329:android:daa14ff8bb48ac6a83a080",
+        "android_client_info": {
+          "package_name": "e.lil.pp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384589523329-73ccvmuveu4t9sr6daspidb31mkrn0jc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "e.lil.pp",
+            "certificate_hash": "215307624b1e4bd40059cbd37bc326c791538c30"
+          }
+        },
+        {
+          "client_id": "384589523329-rvjvts2afggcuunu6lpn9s1al2iknac6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTXD5NsXRkD_qg1PWKHxJrYjIMTI6eAbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384589523329-rvjvts2afggcuunu6lpn9s1al2iknac6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

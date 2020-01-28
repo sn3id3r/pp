@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Personalidad y Prestigio</string>
+    <string name="Nombre_App">PERSONALIDAD Y PRESTIGIO</string>
+    <string name="Texto_1">Embellecemos tus zapatos</string>
+    <string name="Texto_2">Bienvenido</string>
+    <string name="Texto_3">Por favor seleccione una categoria</string>
+    <string name="Boton_1">Lustrar</string>
+    <string name="Ellos">Ellos</string>
+    <string name="Ellas">Ellas</string>
+    <string name="Mixto">Ellos \n y  \nEllas</string>
+    <string name="precios">Nuestros precios:\nEllos: $6.000 \n
+        Ellas:  $6.000\nEllos y Ellas: $10.000</string>
+    <string name="formato">Por favor diligencie el siguiente formato
+        \npara atender tu requerimiento:</string>
+    
+
+</resources>

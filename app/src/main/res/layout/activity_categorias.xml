@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".categorias"
+    android:background="@color/Black">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/Eslogan"
+        android:textSize="10dp"
+        android:layout_below="@id/Logo"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Silver"
+        android:text="@string/Nombre_App"/>
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_below="@id/Eslogan"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Texto_3"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_below="@+id/texto"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Black">
+
+        <FrameLayout
+            android:id="@+id/image_1"
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            android:background="@drawable/cuadrado"
+            android:layout_marginLeft="30dp">
+
+            <ImageButton
+                android:layout_gravity="center"
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:background="@drawable/hombre"
+                android:onClick="Ellos"/>
+        </FrameLayout>
+        <Button
+            android:layout_toRightOf="@+id/image_1"
+            android:layout_centerVertical="true"
+            android:background="@color/Black"
+            android:text="Ellos"
+            android:textSize="20dp"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:onClick="Ellos"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_2"
+        android:layout_below="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Black">
+
+        <Button
+            android:layout_marginLeft="60dp"
+            android:layout_centerVertical="true"
+            android:background="@color/Black"
+            android:text="Ellas"
+            android:textSize="20dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="Ellas"/>
+
+        <FrameLayout
+            android:id="@+id/image_2"
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            android:background="@drawable/cuadrado">
+
+            <ImageButton
+                android:layout_gravity="center"
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:background="@drawable/mujer"
+                android:onClick="Ellas"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_3"
+        android:layout_below="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Black">
+
+        <FrameLayout
+            android:id="@+id/image_3"
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            android:background="@drawable/cuadrado"
+            android:layout_marginLeft="30dp">
+
+            <ImageButton
+                android:layout_gravity="center"
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:background="@drawable/mixto"
+                android:onClick="Mixto"/>
+        </FrameLayout>
+        <Button
+            android:layout_toRightOf="@+id/image_1"
+            android:layout_centerVertical="true"
+            android:background="@color/Black"
+            android:text="@string/Mixto"
+            android:textSize="16dp"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:onClick="Mixto"/>
+    </LinearLayout>
+
+</RelativeLayout>

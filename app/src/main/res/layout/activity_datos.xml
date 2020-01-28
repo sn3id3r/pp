@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Datos"
+    android:background="@color/Black">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/Eslogan"
+        android:textSize="10dp"
+        android:layout_below="@id/Logo"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Silver"
+        android:text="@string/Nombre_App"/>
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_below="@id/Eslogan"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/formato"
+        android:textColor="@color/White"/>
+
+    <LinearLayout
+        android:layout_below="@+id/texto"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_below="@id/texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre completo"
+            android:inputType="textPersonName"
+            android:textSize="15dp"/>
+        <EditText
+            android:id="@+id/telefono"
+            android:layout_below="@id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Telefono / Celular"
+            android:inputType="phone"
+            android:textSize="15dp"/>
+        <EditText
+            android:id="@+id/cantidad"
+            android:layout_below="@id/telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Cantidad de pares"
+            android:inputType="number"
+            android:textSize="15dp"/>
+        <EditText
+            android:id="@+id/recepcion"
+            android:layout_below="@id/cantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Direccion de recepción"
+            android:inputType="textPostalAddress"
+            android:textSize="15dp"/>
+        <EditText
+            android:id="@+id/entrega"
+            android:layout_below="@id/recepcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Direccion de entrega"
+            android:inputType="textPostalAddress"
+            android:textSize="15dp"/>
+        <EditText
+            android:id="@+id/receptor"
+            android:layout_below="@id/entrega"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Persona que recibe"
+            android:inputType="textPersonName"
+            android:textSize="15dp"/>
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cuadrado"
+            android:textColor="@color/Black"
+            android:text="Enviar"
+            android:onClick="enviar"/>
+    </LinearLayout>
+</RelativeLayout>
+
